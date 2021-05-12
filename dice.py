@@ -13,6 +13,9 @@ p2total = 0
 p1dice = 0
 p2dice = 0
 
+#set file destination of score.txt
+score_destination = "{file destination}"
+
 for rounds in range (1,6):
     print ("round: ", rounds, "")
     p1dice = input("user 1 ready? (Y/n) ")
@@ -92,7 +95,7 @@ elif p2total > p1total:
 else:
     error - game crashed
 
-file = open("{file destination.txt}")
+file = open(score_destination)
 file.write("\n" + winner + "," + str(score))
 file.close
 
