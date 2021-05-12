@@ -16,12 +16,14 @@ from sys import exit
 
 logstate = False
 
+authd = "{file destionation}" #destination of csv file for authentication
+
 acc1 = False
 found1 = False
 while acc1 == False:
     username1=input("username: ")
     password1=input("password: ")
-    file=open("{file destination.csv}", "r+")
+    file=open(authd, "r+")
     for line in file:
         details=line.split(",")
         if details[0]==username1 and details [1]==password1 +"\n":
@@ -46,7 +48,7 @@ found2 = False
 while acc2 == False:
     username2=input("username: ")
     password2=input("password: ")
-    file=open("{file destination.csv}", "r+")
+    file=open(authd, "r+")
     for line in file:
         details=line.split(",")
         if details[0]==username2 and details [1]==password2 +"\n":
@@ -82,4 +84,4 @@ while LogState == True:
         import leaderboard
         #exectfile('leaderboard.py')
     else:
-        ("error: restart programme")
+        print("error: restart programme")
