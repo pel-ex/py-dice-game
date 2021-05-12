@@ -1,5 +1,6 @@
 #Made by Alex Brand (pel-ex)
 #Published under MIT Licence
+#School Project - Not updated much, do with this as you like
 
 import random
 import sys
